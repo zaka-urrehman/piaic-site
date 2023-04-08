@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* gradients */
+
+.gradient {
+    background-image: linear-gradient(to bottom right, #1e5285 , #0d253f);
+  }
+
+.gradient2 {
+    background-image: linear-gradient(to bottom right, #e0e7ff, #1e5285);
+  }
+
+.gradient3 {
+    background-image: linear-gradient(to bottom right,  #0d253f, #1e5285);
+  }
+
+  .gradient4 {
+    background-image: linear-gradient(to bottom , #1e5285, #e0e7ff);
+  }
+
+
+
+  /* for button glowing effect */
+
+  @layer utilities{
+
+    .boxshadow{
+      box-shadow: 0 0 5px #03e9f4,
+      0 0 25px #03e9f4,
+      0 0 50px #03e9f4,
+      0 0 100px 
+    }
+    .link{
+      @apply  uppercase tracking-[4px]  border-2 border-[#03e9f4] px-[22px] py-[8px] rounded-xl
+    }
+
+    .link:hover{
+      @apply text-white bg-[#03e9f4] boxshadow
+    }
+    
+    
+  }
